@@ -33,7 +33,7 @@ app.listen(5000 || PORT,(err)=>{
     }
 })
 
-mongoose.connect("mongodb://localhost/instaclonefinal",()=>{
+mongoose.connect("mongodb+srv://PavanKumarV:9164233824v@cluster0.rmr9tjc.mongodb.net/?retryWrites=true&w=majority",()=>{
     console.log("connected to db")
 },(err)=>{
     console.log(err)
