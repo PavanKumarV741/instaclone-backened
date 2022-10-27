@@ -36,7 +36,8 @@ app.listen(port,(err)=>{
     }
 })
 
-mongoose.connect("mongodb+srv://PavanKumarV:9164233824v@cluster0.rmr9tjc.mongodb.net/?retryWrites=true&w=majority",()=>{
+const DB="mongodb+srv://PavanKumarV:9164233824v@cluster0.rmr9tjc.mongodb.net/?retryWrites=true&w=majority"
+mongoose.connect(DB,()=>{
     console.log("connected to db")
 },(err)=>{
     console.log(err)
